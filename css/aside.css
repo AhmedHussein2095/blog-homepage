@@ -1,0 +1,117 @@
+.aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.my-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 80%;
+    margin-left: 10px;
+}
+
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    text-align: start;
+}
+
+.myName {
+    font-family: Damion;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.introParag {
+    width: 320px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: monospace;
+    margin-top: -30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.endParag {
+    font: bold 20px sans-serif;
+    color: #82dce9;
+    letter-spacing: 4px;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.search {    
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+#search {
+
+    width: 170px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#findIt {
+    width: 80px;
+    height: 32px;
+    background-color: chocolate;
+    color: blanchedalmond;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+#findIt:hover {
+    color: black;
+    background-color: #fcd670;
+    transition: .2s linear;
+}
+
+.subscribe {    
+    padding-bottom: 15px;
+    
+}
+
+#subscribeWord {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 93px;
+}
+
+#email {
+    width: 220px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+#name {
+    width: 220px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+#subscribe {
+    width: 190px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 70px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}

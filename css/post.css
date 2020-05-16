@@ -1,0 +1,379 @@
+@import"header.css";
+@import"footer.css";
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 15px 15px;
+    grid-template-columns: 350px 200px;
+    grid-template-rows: repeat(3, 230px);
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn mn mn asid"
+        "mn mn mn mn mn mn mn mn mn asid"
+        "mn mn mn mn mn mn mn mn mn asid"
+        "mn mn mn mn mn mn mn mn mn asid"
+        "ft ft ft ft ft ft ft ft ft ft";
+}
+    
+.header {
+    grid-area: hd;
+}
+    
+.aside {
+    grid-area: asid;
+}
+    
+.main {
+    grid-area: mn;
+    display: flex;
+    flex-direction: column;
+}
+    
+.footer {
+    grid-area: ft;
+    height: auto;
+}
+
+/*aside*/
+.aside {
+    width: 100%;
+    height: auto;
+    border-left: 1px solid black;
+}
+
+.my-pic {
+    width: 70%;
+    height: 280px;
+    margin-top: 70px;
+    margin-left: 80px;
+    border-radius: 50%;
+}
+
+.myName {
+    text-align: center;
+    font-family: Damion;
+    font-size: 50px;
+    margin-left: 18px;
+    margin-top: 70px;
+}
+
+.introParag {
+    text-align: center;
+    width: 300px;
+    margin-left: 75px;
+    margin-top: -40px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.endParag {
+    font: bold 20px sans-serif;
+    text-align: center;
+    margin-left: 87px;
+    color: #82dce9;
+    letter-spacing: 3px;
+}
+
+.search {
+    margin-top: 50px;
+    margin-left: 20px;
+    border-top: 1px solid black;
+    padding-top: 60px;
+}
+
+#search {
+    width: 220px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#findIt {
+    width: 80px;
+    height: 32px;
+    background-color: chocolate;
+    color: blanchedalmond;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+#findIt:hover {
+    color: black;
+    background-color: #fcd670;
+    transition: .2s linear;
+}
+
+.subscribe {
+    margin-top: 80px;
+    border-top: 1px solid black;
+    padding-top: 60px;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 60px;
+}
+
+#subscribeWord {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 133px;
+}
+
+#email {
+    width: 220px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 80px;
+}
+
+#name {
+    width: 220px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 80px;
+}
+
+#subscribe {
+    width: 190px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 100px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/* main */
+.post-main h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.post-main p {
+    width: 97%;
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 500;
+    font-family: Antic;
+    padding: 7px;
+}
+
+.post-main figure img {
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.post-main figure figcaption {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+/* .post-main video{
+    margin:  50px 25px 25px 25px;
+    width: 95%;
+    height: 400px;
+} */
+
+.video iframe{
+    margin: 80px 0;
+    margin-left: 10%;
+    width: 80%;
+    height: 400px;
+}
+
+.post-main span {
+    margin: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-main dl {
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.post-main dt {
+    font-weight: 600;
+}
+
+.post-main blockquote {
+    margin-bottom: 40px;
+}
+
+.italicPara{
+    font-style: italic;
+}
+
+#quotepara{
+    font-weight: bolder;
+}
+
+#underline{
+    text-decoration: underline;
+}
+
+
+@media(max-width:400px){
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 15px 15px;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(4, 230px);
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "asid asid asid asid asid asid asid asid"
+            "mn mn mn mn mn mn mn mn"
+            "mn mn mn mn mn mn mn mn"
+            "mn mn mn mn mn mn mn mn"
+            "ft ft ft ft ft ft ft ft";
+    }
+    
+    
+    .header {
+        grid-area: hd;
+    }
+    
+    .aside {
+        grid-area: asid;
+    }
+    
+    .main {
+        grid-area: mn;
+    }
+    
+    .footer {
+        grid-area: ft;
+    }
+    
+    /*aside*/
+    .aside {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .my-pic {
+        border-radius: 50%;
+        width: 200px;
+        height: 80%;
+        margin-left: 10px;
+    }
+    
+    
+    #intro {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        text-align: start;
+    }
+    
+    .myName {
+        font-family: Damion;
+        font-size: 40px;
+        margin-left: 40px;
+    }
+    
+    .introParag {
+        width: 320px;
+        font-style: italic;
+        font-weight: 500;
+        font-family: monospace;
+        margin-top: -30px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    .endParag {
+        font: bold 20px sans-serif;
+        color: #82dce9;
+        letter-spacing: 4px;
+        margin-top: 8px;
+        margin-left: 25px;
+    }
+    
+    .search {    
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #search {
+    
+        width: 170px;
+        height: 30px;
+        border: 1px solid black;
+    }
+    
+    #findIt {
+        width: 80px;
+        height: 32px;
+        background-color: chocolate;
+        color: blanchedalmond;
+    
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-left: 4px;
+    }
+    
+    #findIt:hover {
+        color: black;
+        background-color: #fcd670;
+        transition: .2s linear;
+    }
+    
+    .subscribe {    
+        padding-bottom: 15px;
+        
+    }
+    
+    #subscribeWord {
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-left: 93px;
+    }
+    
+    #email {
+        width: 220px;
+        height: 30px;
+        margin-top: 7px;
+        margin-left: 50px;
+    }
+    
+    #name {
+        width: 220px;
+        height: 30px;
+        margin-top: 7px;
+        margin-left: 50px;
+    }
+    
+    #subscribe {
+        width: 190px;
+        height: 25px;
+        margin-top: 8px;
+        margin-left: 70px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+    }
+}

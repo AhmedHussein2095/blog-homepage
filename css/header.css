@@ -1,0 +1,56 @@
+.header {
+    background-image: url(posts-photos/cover2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.menu {
+   margin-right: -500px;
+   margin-top: 20px;
+}
+
+.header1 {
+    color: #ffffff;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 4vh;
+    transition: .6s linear;
+}
+
+.header2 {
+    color: #bbbbbb;
+    font-size: 2vw;
+    font-family: monospace;
+    margin-top: 0px;
+    transition: .6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+span {
+    margin: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+.menu a:active {
+    color: orange;
+    text-decoration: underline;
+}
+
+
